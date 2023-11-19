@@ -15,7 +15,7 @@ func TestCountStairs(t *testing.T) {
 		actualResult := CountStairs(tc.Input)
 
 		if actualResult != tc.ExpectedResult {
-			t.Fatalf("Actual: %v, Want: %v", actualResult, tc.ExpectedResult)
+			t.Errorf("Got: %v, Want: %v", actualResult, tc.ExpectedResult)
 		}
 	}
 }
